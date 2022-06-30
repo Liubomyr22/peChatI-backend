@@ -67,7 +67,7 @@ const userController = {
 			res.json({ msg: 'Account has been activated!' })
 
 		} catch (err) {
-			return req.status(500).json({ msg: err.message })
+			return res.status(500).json({ msg: err.message })
 		}
 	},
 	login: async (req, res) => {

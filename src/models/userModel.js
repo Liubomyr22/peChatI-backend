@@ -1,6 +1,6 @@
 import mongoose from 'mongoose';
 
-const User = new mongoose.Schema (
+const User = new mongoose.Schema(
   {
     name: {
       type: String,
@@ -19,7 +19,7 @@ const User = new mongoose.Schema (
     },
     avatar: {
       type: String,
-      default: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLpGdJw8wuHSUgzEIoeDoK86p_akIzZf2ohg&usqp=CAU',
+      default: 'https://res.cloudinary.com/luco22/image/upload/v1656489890/avatar/adkvg8srzntrfqpiynsu.jpg',
     },
   },
   {
@@ -27,4 +27,4 @@ const User = new mongoose.Schema (
   }
 );
 
-export default mongoose.model ('Users', User);
+export default mongoose.model('Users', User);

@@ -16,7 +16,7 @@ app.use(cookieParser())
 app.use(fileUpload({ useTempFiles: true }))
 
 
-app.use('/users', users)
+app.use('/user', users)
 app.use('/api', upload)
 
 app.use('/', (req, res, next) => {
